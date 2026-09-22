@@ -1,0 +1,83 @@
+DATA 266 HW2.5 RUN LOG
+
+Student: Vrishin KP
+Date: September 18, 2026
+
+GPU: NVIDIA GeForce RTX 4090
+GPU UUID: GPU-3b8e816c-80f8-6ffd-b5ba-72725de33e1f
+
+ENVIRONMENT
+- Driver: 610.60
+- CUDA reported by NVIDIA-SMI: 13.3
+- PyTorch: 2.11.0+cu128
+- PyTorch CUDA: 12.8
+- Compute capability: 8.9
+- Operating system: Windows WDDM
+
+PART B — PRECISION BENCHMARK
+- Measurement GPU UUID: GPU-3b8e816c-80f8-6ffd-b5ba-72725de33e1f
+- Matrix sizes: 1024, 4096, 8192, 16384
+- Precisions: FP32, TF32, FP16, BF16
+- Repetitions: 10
+- Warm-up iterations: 3
+- Dense theoretical peaks used:
+  FP32 = 82.6 TFLOPS
+  TF32 = 82.6 TFLOPS
+  FP16 = 165.2 TFLOPS
+  BF16 = 165.2 TFLOPS
+- FP16 and BF16 theoretical values use FP32 accumulation.
+- Derived percentage values were recalculated from the recorded RTX 4090 achieved TFLOPS after correcting the theoretical peak references.
+- No new RTX 4090 timing was performed after this correction.
+
+PART C — BANDWIDTH AND ARITHMETIC INTENSITY
+- Measurement GPU UUID: GPU-3b8e816c-80f8-6ffd-b5ba-72725de33e1f
+- Operation: FP32 elementwise addition
+- Elements per array: 134,217,728
+- Repetitions: 20
+- Effective bandwidth: 908.65 GB/s
+- NVIDIA specified bandwidth: 1008 GB/s
+- Effective bandwidth as percentage of specification: 90.14%
+- Matrix multiplication size: 8192 x 8192
+- FP32 matrix multiplication throughput: 54.556 TFLOPS
+- Matrix multiplication arithmetic intensity: 1365.33 FLOPs/byte
+- Elementwise-add arithmetic intensity: 0.0833 FLOPs/byte
+
+PART D — ATTENTION
+- Measurement GPU UUID: GPU-3b8e816c-80f8-6ffd-b5ba-72725de33e1f
+- Batch size: 1
+- Number of heads: 1
+- Head dimension: 64
+- Data type: FP16
+- Naive attention coarse lengths:
+  512, 1024, 2048, 4096, 8192, 16384
+- Naive attention boundary:
+  49,152 succeeded; 65,536 failed
+- Fused attention tested successfully through:
+  1,048,576
+- Fused attention exact OOM boundary: not reached
+- The fused result is reported as a lower bound, not an exact failure boundary.
+
+PART E — THERMAL LOAD
+- Measurement GPU UUID: GPU-3b8e816c-80f8-6ffd-b5ba-72725de33e1f
+- Duration: 20 minutes
+- Sampling interval: 5 seconds
+- Workload: FP16 matrix multiplication, N = 8192
+- Maximum temperature: 76°C
+- Maximum power draw: 451.68 W
+- Maximum GPU utilization: 99%
+- Sustained 5% clock drop: none detected
+- First 30 seconds throughput: 153.867 TFLOPS
+- Final 5 minutes throughput: 150.636 TFLOPS
+- Steady-state throughput: 97.9% of initial throughput
+
+SOURCE
+NVIDIA Ada GPU Architecture Whitepaper, Appendix A, Table 2:
+https://images.nvidia.com/aem-dam/Solutions/Data-Center/l4/nvidia-ada-gpu-architecture-whitepaper-V2.02.pdf
+
+OUTPUT FILES
+- nvidia-smi-q.txt
+- thermal_log_rtx4090.csv
+- rtx4090_precision_tflops.png
+- rtx4090_naive_attention_memory.png
+- rtx4090_attention_speed_comparison.png
+- rtx4090_thermal_clocks_temperature.png
