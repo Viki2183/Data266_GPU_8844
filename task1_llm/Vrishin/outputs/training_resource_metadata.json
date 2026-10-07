@@ -1,0 +1,15 @@
+{
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "machine": "AMD64",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "pytorch": "2.14.0+cu130",
+  "cuda_version": "13.0",
+  "parameter_count": 3248640,
+  "total_training_time_seconds": 182.5694510936737,
+  "total_training_tokens": 128000000,
+  "training_tokens_per_second": 701103.0554850333,
+  "peak_memory_allocated_gb": 1.4048843383789062,
+  "peak_memory_reserved_gb": 1.55078125
+}

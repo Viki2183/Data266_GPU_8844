@@ -1,0 +1,10 @@
+{
+  "gradient_norm_mean": 0.3684396242912351,
+  "gradient_norm_max": 1.7694355249404907,
+  "gradient_norm_std": 0.10082454792095322,
+  "loss_spike_count": 0,
+  "loss_nan_count": 0,
+  "gradient_nan_count": 0,
+  "learning_rate_nan_count": 0,
+  "total_nonfinite_count": 0
+}

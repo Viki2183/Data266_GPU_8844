@@ -1,0 +1,42 @@
+{
+  "0.0": {
+    "distinct_1_char": 0.13024999999999998,
+    "distinct_2_char": 0.38819095477386933,
+    "distinct_3_char": 0.5222222222222223,
+    "repeated_4gram_rate_char": 0.4289340101522843,
+    "distinct_1_word": 0.5093902744229867,
+    "distinct_2_word": 0.6242761125757738,
+    "distinct_3_word": 0.6697513414758373,
+    "repeated_4gram_rate_word": 0.30200795915625017
+  },
+  "0.5": {
+    "distinct_1_char": 0.1426,
+    "distinct_2_char": 0.5234673366834172,
+    "distinct_3_char": 0.7501010101010104,
+    "repeated_4gram_rate_char": 0.15385786802030454,
+    "distinct_1_word": 0.7265965155969377,
+    "distinct_2_word": 0.9469469211428813,
+    "distinct_3_word": 0.9851877309699836,
+    "repeated_4gram_rate_word": 0.003627837027156369
+  },
+  "0.8": {
+    "distinct_1_char": 0.14745,
+    "distinct_2_char": 0.5615075376884422,
+    "distinct_3_char": 0.80020202020202,
+    "repeated_4gram_rate_char": 0.10903553299492386,
+    "distinct_1_word": 0.7809150458877748,
+    "distinct_2_word": 0.9805952006249057,
+    "distinct_3_word": 0.9962046521828293,
+    "repeated_4gram_rate_word": 0.0012897863796451727
+  },
+  "1.0": {
+    "distinct_1_char": 0.15004999999999996,
+    "distinct_2_char": 0.5751758793969849,
+    "distinct_3_char": 0.8221212121212119,
+    "repeated_4gram_rate_char": 0.08908629441624365,
+    "distinct_1_word": 0.8217943365609574,
+    "distinct_2_word": 0.9874692863716806,
+    "distinct_3_word": 0.9981568005252215,
+    "repeated_4gram_rate_word": 0.0005409356725146198
+  }
+}

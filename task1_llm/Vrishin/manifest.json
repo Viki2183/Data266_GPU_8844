@@ -1,0 +1,56 @@
+{
+  "seed": 8844,
+  "dataset": "roneneldan/TinyStories",
+  "train_sequences": 100000,
+  "validation_sequences": 10000,
+  "context_length": 128,
+  "configuration": {
+    "seed": 8844,
+    "context_length": 128,
+    "batch_size": 64,
+    "embedding_dim": 256,
+    "num_heads": 4,
+    "num_layers": 4,
+    "dropout": 0.1,
+    "learning_rate": 0.0003,
+    "epochs": 10,
+    "train_sequences": 100000,
+    "validation_sequences": 10000,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.05,
+    "gradient_clip_norm": 1.0
+  },
+  "hardware": {
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "machine": "AMD64",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "pytorch": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "parameter_count": 3248640,
+    "total_training_time_seconds": 182.5694510936737,
+    "total_training_tokens": 128000000,
+    "training_tokens_per_second": 701103.0554850333,
+    "peak_memory_allocated_gb": 1.4048843383789062,
+    "peak_memory_reserved_gb": 1.55078125
+  },
+  "generation_resources": {
+    "timed_generated_characters": 500,
+    "generation_elapsed_seconds": 1.8243585999589413,
+    "generation_tokens_per_second": 274.0689248326798
+  },
+  "checkpoint_mapping": {
+    "report_uses": "final_model.pt",
+    "best_model.pt": {
+      "selection_rule": "lowest validation loss",
+      "validation_loss": 0.8727689301891691
+    },
+    "final_model.pt": {
+      "selection_rule": "model after final training epoch",
+      "validation_loss": 0.8727689301891691,
+      "validation_top1_accuracy": 0.72531796875
+    }
+  },
+  "report_file": "outputs/metrics_report.csv"
+}

@@ -1,0 +1,14 @@
+{
+  "train_eval_sequences": 10000,
+  "train_loss_dropout_off": 0.8433332967150743,
+  "train_perplexity_dropout_off": 2.324100997948406,
+  "train_bpc_dropout_off": 1.2166727649873785,
+  "train_top1_accuracy_dropout_off": 0.73213515625,
+  "train_loss_dropout_on": 0.9062144078662284,
+  "validation_loss": 0.8727689301891691,
+  "validation_perplexity": 2.393529201688915,
+  "validation_bpc": 1.2591394074258802,
+  "validation_top1_accuracy": 0.72531796875,
+  "generalization_gap_dropout_off": 0.029435633474094836,
+  "generalization_gap_dropout_on": -0.0334454776770593
+}
